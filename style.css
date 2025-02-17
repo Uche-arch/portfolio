@@ -250,11 +250,14 @@ form button:hover {
         font-size: 25px;
     }
     .typing-text {
-        font-size: 18px;
+        font-size: 20px;
         color: blue;
     }
     .about-section p, .contact-section p {
         font-size: 17px;
+    }
+    .about-section span {
+        display: none;
     }
 }
 @media screen and (max-width:320px) {
@@ -264,15 +267,19 @@ form button:hover {
     .introduction > h1 {
         font-size: 20px;
     }
+    
     .typing-text {
-        font-size: 15px;
-        /* color: yellow; */
+        font-size: 16px;
+        color: blue;
     }
     .about-section p, .contact-section p {
-        font-size: 14px;
+        font-size: 12px;
     }
     .about-section h2, .contact-section h2, .projects-section h2 {
-        font-size: 30px;
+        font-size: 25px;
+    }
+    .about-section span {
+        display: none;
     }
     .input-group {
         display: block;
