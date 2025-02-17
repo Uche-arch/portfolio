@@ -260,7 +260,7 @@ form button:hover {
         display: none;
     }
 }
-@media screen and (max-width:370px) {
+@media screen and (max-width:400px) {
     .nav-links li a {
         font-size: 8px;
     }
@@ -269,7 +269,7 @@ form button:hover {
     }
     
     .typing-text {
-        font-size: 16px;
+        font-size: 18px;
         color: blue;
     }
     .about-section p, .contact-section p {
