@@ -262,8 +262,8 @@ form button:hover {
   .nav-links li a {
     font-size: 12px;
   }
-  .developer_pic img {
-    /* border-radius: 50%; */
+  /* .developer_pic img {
+    border-radius: 50%;
     width: 300px;
     border: 2px solid black;
     display: block;
@@ -272,7 +272,7 @@ form button:hover {
     position: absolute;
     top: 20vh;
     left: 10vh;
-  }
+  } */
   .introduction > h1 {
     font-size: 25px;
   }
@@ -301,14 +301,14 @@ form button:hover {
     color: blue;
   }
   .developer_pic img {
-    border-radius: 100%;
-    width: 300px;
+    /* border-radius: 100%; */
+    max-width: 300px;
     border: 2px solid black;
     display: block;
   }
   .developer_pic {
-    left: 95vh;
-    top: 45vh;
+    /* left: 10vh; */
+    top: 40vh;
     position: absolute;
   }
   .about-section p,
