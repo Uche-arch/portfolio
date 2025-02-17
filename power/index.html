@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Your Name - Front-End Developer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #1e1e1e;
+            color: #fff;
+            line-height: 1.6;
+            margin: 0;
+        }
+
+        /* Full-screen header */
+        header {
+            background: linear-gradient(45deg, #ff6347, #1e90ff);
+            color: white;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 0 20px;
+            transition: all 0.3s ease-in-out;
+        }
+
+        header h1 {
+            font-size: 4em;
+            font-weight: bold;
+            margin-bottom: 0.5em;
+            text-transform: uppercase;
+            animation: fadeIn 2s ease-out;
+        }
+
+        header p {
+            font-size: 1.5em;
+            margin-top: 10px;
+            animation: fadeIn 2s ease-out 0.5s;
+        }
+
+        /* Hover effect for the buttons */
+        header .cta-btn {
+            background: #fff;
+            color: #1e1e1e;
+            padding: 12px 40px;
+            margin-top: 20px;
+            text-decoration: none;
+            font-size: 1.2em;
+            border-radius: 25px;
+            transition: all 0.3s ease;
+        }
+
+        header .cta-btn:hover {
+            background: #ff6347;
+            color: #fff;
+            transform: scale(1.1);
+        }
+
+        /* Animation */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        /* Portfolio Section */
+        section {
+            padding: 60px 20px;
+        }
+
+        section h2 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #ff6347;
+            margin-bottom: 30px;
+            text-transform: uppercase;
+        }
+
+        /* Project Cards */
+        .projects {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 30px;
+        }
+
+        .project-card {
+            background-color: #2d2d2d;
+            padding: 20px;
+            border-radius: 10px;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .project-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .project-card img {
+            width: 100%;
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card img:hover {
+            transform: scale(1.1);
+        }
+
+        .project-card h3 {
+            margin-top: 15px;
+            color: #ff6347;
+        }
+
+        .project-card p {
+            color: #ddd;
+        }
+
+        /* Contact Section */
+        .contact {
+            text-align: center;
+            padding: 50px 20px;
+            background: #111;
+        }
+
+        .contact h2 {
+            font-size: 2.5em;
+            color: #fff;
+            margin-bottom: 20px;
+        }
+
+        .contact p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+            color: #bbb;
+        }
+
+        .social-links {
+            margin-top: 20px;
+        }
+
+        .social-links a {
+            color: #ff6347;
+            margin: 0 15px;
+            font-size: 2em;
+            text-decoration: none;
+            transition: color 0.3s ease;
+        }
+
+        .social-links a:hover {
+            color: #fff;
+        }
+
+        footer {
+            background-color: #111;
+            text-align: center;
+            padding: 20px;
+            color: #fff;
+        }
+
+        footer p {
+            font-size: 1em;
+        }
+
+        /* Mobile Responsiveness */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.8em;
+            }
+
+            .cta-btn {
+                font-size: 1.1em;
+            }
+
+            .projects {
+                grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Your Name</h1>
+    <p>Front-End Developer | Web Designer</p>
+    <a href="#contact" class="cta-btn">Contact Me</a>
+</header>
+
+<section>
+    <h2>My Projects</h2>
+    <div class="projects">
+        <div class="project-card">
+            <img src="https://via.placeholder.com/600x400" alt="Project 1">
+            <h3>Project One</h3>
+            <p>This is a project description. A dynamic web app built using React and Node.js.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://via.placeholder.com/600x400" alt="Project 2">
+            <h3>Project Two</h3>
+            <p>This is another project description. A portfolio website with interactive animations.</p>
+        </div>
+
+        <div class="project-card">
+            <img src="https://via.placeholder.com/600x400" alt="Project 3">
+            <h3>Project Three</h3>
+            <p>This is a description of a project that integrates APIs to fetch live data.</p>
+        </div>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>If you want to collaborate or have any questions, feel free to reach out!</p>
+    <p>Email: <a href="mailto:your.email@example.com" style="color: #ff6347;">your.email@example.com</a></p>
+    <div class="social-links">
+        <a href="https://github.com/yourusername" target="_blank">GitHub</a>
+        <a href="https://www.linkedin.com/in/yourusername/" target="_blank">LinkedIn</a>
+        <a href="https://twitter.com/yourusername" target="_blank">Twitter</a>
+    </div>
+</section>
+
+<footer>
+    <p>&copy; 2025 Your Name. All Rights Reserved.</p>
+</footer>
+
+</body>
+</html>

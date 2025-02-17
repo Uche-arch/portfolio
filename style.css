@@ -1,0 +1,292 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Lobster&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Rock+Salt&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.1s ease;
+}
+html {
+    scroll-behavior: smooth;
+}
+::-webkit-scrollbar {
+  width: 4px; /* Thin scrollbar width */
+  height: 4px; /* Thin horizontal scrollbar width (if needed) */
+}
+.container {
+    max-width: 85%;
+    margin: auto;
+}
+p, label, button, .nav-links {
+    font-family: "Poppins", serif;;
+}
+h2, h3 {
+    font-family: 'Bebas Neue', sans-serif;
+}
+body {
+    /* background-image: linear-gradient(to right, #00b4db, #0083b0); */
+    /* background-color: red; */
+    /* background: url(cool-neon-blue-2ygsncczsy62itlc.jpg) no-repeat center; */
+    /* background-size: cover; */
+    /* backdrop-filter: brightness(10px); */
+    /* filter: blur(20px); */
+    color: #e0e0e0;
+    /* background: #1f1f1f; */
+    background: linear-gradient(45deg, #2a2a2a, #000000);
+    /* background: linear-gradient(45deg, #434343, #2f2f2f); */
+}
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background:   #111;
+    z-index: 5;
+    padding: 0 20px;
+    /* border-bottom: 1px solid white; */
+}
+header h1 {
+    font-family: "Lobster", serif;
+    letter-spacing: 2px;
+    font-size: 40px;
+    font-weight: lighter;
+}
+nav {
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul li a {
+    text-decoration: none;
+    font-size: 15px;
+    letter-spacing: 1px;
+    font-weight: bold;
+    color: white;
+}
+.nav-links, .social-links {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    text-transform: uppercase;
+}
+.social-links li a {
+    font-size: 18px;
+}
+.social-links li a:hover {
+    color: white;
+}
+.home-section {
+    position: relative;
+    height: 100vh;
+    /* margin-top: 70px; */
+    /* padding-top: 20px; */
+    /* border: 1px solid; */
+}
+.introduction {
+    position: absolute;
+    top: 60vh;
+}
+.introduction > h1 {
+    font-size: 50px;
+    font-weight: lighter;
+}
+.introduction > h1 span {
+    font-weight: 600;
+    letter-spacing: 3px;
+    font-family: 'Rock Salt', cursive;
+}
+.typing-text {
+    font-family: monospace;
+    font-size: 45px;
+    font-weight: lighter;
+    animation: typing 7s 1s 1;
+    white-space: nowrap; 
+    color: black;
+    /* border-right: 1px solid black; */
+    overflow: hidden;
+    /* width: 0ch; */
+    /* display: block; */
+}
+@keyframes typing {
+    0%{
+        width: 21ch;
+        color: black;
+    }
+    50% {
+        width: 0ch;
+    }
+    100% {
+        width: 21ch;
+        color: black;
+    }
+}
+.about-section, .projects-section, .contact-section {
+    padding-top: 25px;
+    /* margin-top: 70px; */
+}
+.about-section h2 {
+    font-size: 45px;
+    margin-top: 40px;
+}
+.about-section p {
+    font-size: 20px;
+    width: 70%;
+    margin-bottom: 10px;
+    line-height: 1.5;
+    font-weight: 500;
+}
+.about-section h3{
+    margin: 35px 0 10px 0;
+    font-size: 25px;
+    font-weight: lighter;
+}
+.contact-section h2, .projects-section h2 {
+    font-size: 45px;
+    margin-bottom: 15px;
+    text-align: center;
+    margin-top: 40px;
+    text-transform: capitalize;
+}
+.contact-section p {
+    font-size: 20px;
+    width: 60%;
+    margin: auto;
+}
+.contact-section form {
+    width: 60%;
+    margin: auto;
+    /* border: 1px solid black; */
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px auto;
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0px 15px rgba(0, 0, 0, 0.5);
+}
+.input-group{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    margin: 10px 0;
+    position: relative;
+}
+.input-group label {
+    flex-basis: 28%;
+}
+.input-group input ,.input-group textarea {
+    flex-basis: 68%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 10px 0;
+    border-bottom: 1px solid #999;
+    color: #333;
+    font-size: 16px;
+}
+::placeholder {
+    font-size: 14px;
+    color: #141a34;
+}
+form button {
+    background: #141a34;
+    color: white;
+    border-radius: 4px;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    padding: 10px 40px;
+    outline: 0;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 10px;
+}
+form button:hover {
+    border: 1px solid black;
+    color: black;
+}
+.footer-social-links {
+    display: flex;
+    list-style-type: none;
+    gap: 2rem;
+    font-size: 30px;
+    margin: 10px 0;
+    justify-content: flex-end;
+}
+.footer-social-links li a {
+    color: white;
+}
+.footer-social-links li a:hover, .social-links li a:hover {
+    color: black;
+}
+
+@media screen and (max-width:800px) {
+    .introduction {
+        top: 75vh;
+    }
+    .social-links {
+        display: none;
+    }
+    .about-section p, .contact-section p{
+        width: 100%;
+    }
+    .contact-section form {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    header h1 {
+        display: none;
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+        /* padding: 20px 0; */
+        /* font-size: 16px; */
+    }
+    .nav-links li a {
+        font-size: 12px;
+    }
+    .introduction > h1 {
+        font-size: 30px;
+    }
+    .typing-text {
+        font-size: 30px;
+    }
+    .about-section p, .contact-section p {
+        font-size: 17px;
+    }
+}
+@media screen and (max-width:330px) {
+    .nav-links li a {
+        font-size: 8px;
+    }
+    .introduction > h1 {
+        font-size: 20px;
+    }
+    .typing-text {
+        font-size: 20px;
+    }
+    .about-section p, .contact-section p {
+        font-size: 14px;
+    }
+    .about-section h2, .contact-section h2, .projects-section h2 {
+        font-size: 30px;
+    }
+    .input-group {
+        display: block;
+        /* width: 100%; */
+    }
+    .input-group label {
+        font-size: 10px;
+    }
+    ::placeholder {
+        font-size: 10px;
+    }
+    form button {
+        padding: 8px 20px;
+        margin: 20px auto 10px;
+    }
+    .footer-social-links {
+        font-size: 20px;
+    }
+}
