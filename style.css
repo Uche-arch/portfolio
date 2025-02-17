@@ -102,7 +102,7 @@ nav ul li a {
     font-weight: lighter;
     animation: typing 7s 1s 1;
     white-space: nowrap; 
-    color: black;
+    color: blue;
     /* border-right: 1px solid black; */
     overflow: hidden;
     /* width: 0ch; */
@@ -111,14 +111,14 @@ nav ul li a {
 @keyframes typing {
     0%{
         width: 21ch;
-        color: black;
+        color: blue;
     }
     50% {
         width: 0ch;
     }
     100% {
         width: 21ch;
-        color: black;
+        color: blue;
     }
 }
 .about-section, .projects-section, .contact-section {
@@ -250,13 +250,14 @@ form button:hover {
         font-size: 25px;
     }
     .typing-text {
-        font-size: 22px;
+        font-size: 18px;
+        color: blue;
     }
     .about-section p, .contact-section p {
         font-size: 17px;
     }
 }
-@media screen and (max-width:330px) {
+@media screen and (max-width:320px) {
     .nav-links li a {
         font-size: 8px;
     }
@@ -265,7 +266,7 @@ form button:hover {
     }
     .typing-text {
         font-size: 15px;
-        color: yellow;
+        /* color: yellow; */
     }
     .about-section p, .contact-section p {
         font-size: 14px;
