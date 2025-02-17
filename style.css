@@ -264,7 +264,8 @@ form button:hover {
         font-size: 20px;
     }
     .typing-text {
-        font-size: 20px;
+        font-size: 16px;
+        color: #e0e0e0;
     }
     .about-section p, .contact-section p {
         font-size: 14px;
