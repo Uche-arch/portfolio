@@ -260,7 +260,7 @@ form button:hover {
         display: none;
     }
 }
-@media screen and (max-width:320px) {
+@media screen and (max-width:370px) {
     .nav-links li a {
         font-size: 8px;
     }
@@ -282,7 +282,8 @@ form button:hover {
         display: none;
     }
     .input-group {
-        display: block;
+        display: flex;
+        flex-direction: column;
         /* width: 100%; */
     }
     .input-group label {
